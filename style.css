@@ -1,0 +1,27 @@
+body {
+  max-width: 40em;
+  margin: auto;
+}
+
+img {
+  max-width: 50%;
+  display: block;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-title {
+  font-weight: bold;
+}
+
+.post-publication-date {
+  color: gray;
+}
