@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/style.css" />
+  <title>About</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h1>Andre's Blog</h1>
+      <h4><a href="/">Home</a></h4>
+      <p><a href="/about.html">About</a></p>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="sidebar">
+      <p>Jump to article:</p>
+      <ul>
+        <li>
+          <a href="/#myplants">My plants!</a>
+        </li>
+        <li>
+          <a href="/#htmladvice">HTML Advice!</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-contents">
+      <div id="contact-form">
+        <div>Contact me!</div>
+        <form>
+          <div>
+            <label for="name">Your name:</label>
+            <input type="text" id="name" name="name">
+          </div>
+          <div>
+            <label for="emailaddr">Your email:</label>
+            <input type="text" id="emailaddr" name="emailaddr">
+          </div>
+          <div>
+            <label for="reason">Your reason for contact:</label>
+            <select name="reason" id="reason">
+              <option value="hi">Saying hi</option>
+              <option value="contract">Looking for a contractor</option>
+              <option value="interview">Interested in an interview</option>
+            </select>
+          </div>
+          <div>
+            <label for="opencomment">Comment:</label>
+            <textarea id="opencomment" name="opencomment"></textarea>
+          </div>
+
+          <input type="submit">
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

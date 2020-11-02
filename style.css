@@ -1,5 +1,6 @@
 body {
-  width: 40em;
+  max-width: 60em;
+  padding: .5em;
   margin: auto;
 }
 
@@ -11,6 +12,27 @@ img {
 header {
   display: flex;
   justify-content: space-between;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+.container {
+  padding-top: 1em;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.page-contents {
+  padding: .5em;
+  flex: 4
+}
+
+
+.sidebar {
+  padding: .5em;
+  flex: 2;
 }
 
 .post-info {
@@ -46,6 +68,18 @@ nav {
 .post-body {
   text-align: justify;
 }
+
+
+#house-fig {
+  float: right;
+  width: 30%;
+  padding: 0.5em;
+}
+
+#house-fig img {
+  max-width: 100%;
+}
+
 
 * {
   font-family: Arial, Helvetica, sans-serif;
