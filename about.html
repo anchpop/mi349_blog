@@ -1,34 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style.css" />
-    <title>About</title>
-  </head>
-  <body>
-    <header>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/style.css" />
+  <title>About</title>
+</head>
+
+<body>
+  <header>
+    <nav>
       <h1>Andre's Blog</h1>
       <h4><a href="/">Home</a></h4>
-      <p><a href="/about">About</a></p>
-    </header>
-    <p>Hi! I'm Andre and this is my blog.</p>
-    <p>
-      I have many posts of many topics. Too many to list here, even if the list
-      were numbered.
-    </p>
-    <p>
-      Maybe you're wondering about my list of credentials. You expected to see a
-      list of them in here? Well I don't have any, so too bad!
-    </p>
-    <p>Here's a selfie though: <img src="/pictures/selfie.jpg" /></p>
-    And here's a list of my favorite numbers!
-    <ol>
-      <li>9</li>
-      <li>2</li>
-      <li>1</li>
-      <li>5</li>
-      <li>7</li>
-    </ol>
-  </body>
+      <p><a href="/about.html">About</a></p>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="sidebar">
+      <p>Jump to article:</p>
+      <ul>
+        <li>
+          <a href="/#myplants">My plants!</a>
+        </li>
+        <li>
+          <a href="/#htmladvice">HTML Advice!</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-contents">
+      <p>Hi! I'm Andre and this is my blog.</p>
+      <p>
+        I have many posts of many topics. Too many to list here, even if the list
+        were numbered.
+      </p>
+      <p>
+        Maybe you're wondering about my list of credentials. You expected to see a
+        list of them in here? Well I don't have any, so too bad!
+      </p>
+      <figure id="house-fig">
+        <img src="/pictures/Hedrick.jpg" alt="My house" style="width:100%">
+        <figcaption>This is the house in which I live</figcaption>
+      </figure>
+      <p>Here's a selfie though: <img src="/pictures/selfie.jpg" alt="selfie" /></p>
+      And here's a list of my favorite numbers!
+      <ol>
+        <li>9</li>
+        <li>2</li>
+        <li>1</li>
+        <li>5</li>
+        <li>7</li>
+      </ol>
+    </div>
+  </div>
+</body>
+
 </html>

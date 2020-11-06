@@ -1,5 +1,6 @@
 body {
-  width: 350px;
+  max-width: 350px;
+  padding: .5em;
   margin: auto;
 }
 
@@ -11,6 +12,27 @@ img {
 header {
   display: flex;
   justify-content: space-between;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+.container {
+  padding-top: 1em;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.page-contents {
+  padding: .5em;
+  flex: 4
+}
+
+
+.sidebar {
+  padding: .5em;
+  flex: 2;
 }
 
 .post-info {
@@ -26,8 +48,50 @@ header {
   color: gray;
 }
 
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+#contact-form {
+  margin-top: 10px;
+}
+
+#signup-form {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.post-body {
+  text-align: justify;
+}
+
+
+#house-fig {
+  float: right;
+  width: 30%;
+  padding: 0.5em;
+}
+
+#house-fig img {
+  max-width: 100%;
+}
+
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
 @media only screen and (max-width: 400px) {
   body {
     max-width: 98%;
+  }
+  
+  .container {
+    flex-direction: column-reverse;
   }
 }
